@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cyan-50">
+  <!-- Navbar -->
+  <nav class="relative container mx-auto py-6 px-10 bg-cyan-50 z-20">
+    <div class="flex items-center justify-between">
+      <!-- Nav Left -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="font-semibold hover:text-cyan-700 text-cyan-900 px-4 py-2">Home</a>
+        <a href="#" class="font-semibold hover:text-cyan-700 text-cyan-900 px-4 py-2">Contact</a>
+      </div>
+      
+      <!-- Logo -->
+      <div class="-pt-2 min-sm:w-[190px]">
+        <img class="px-3" src="../assets/logo.svg" alt="Logo">
+      </div>
+      
+      <!-- Nav Right -->
+      <div class="hidden md:flex space-x-6">
+        <a class="font-semibold px-4 py-2 hover:text-cyan-700 text-cyan-900">Login</a>
+        <a class="font-semibold bg-cyan-700 text-black-700 hover:text-cyan-900 px-4 py-2 rounded hover:bg-cyan-400">Sign Up</a>
+      </div>
+      
+      <!-- Hamburger Menu -->
+        <div class="md:hidden relative flex items-center justify-center">
+        <button id="menu-open-button" class="fas fa-bars text-cyan-600 hover:text-cyan-700 transition-colors" style="font-size: 2.5rem;"></button>
+        <button id="menu-close-button" class="hidden fas fa-times text-cyan-600 hover:text-cyan-700 transition-colors absolute right-0 z-50s" style="font-size: 3rem;"></button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-10 menu-slide">
+  <div class="flex flex-col items-center space-y-8 pt-20">
+    <a class="font-semibold text-cyan-700 hover:text-cyan-900 text-xl" href="#home">Home</a>
+    <a class="font-semibold text-cyan-700 hover:text-cyan-900 text-xl" href="#contact">Contact</a>
+    <a class="font-semibold text-cyan-700 hover:text-cyan-900 text-xl" href="#signup">Sign Up</a>
+    <a class="font-semibold text-cyan-700 hover:text-cyan-900 text-xl" href="#login">Login</a>
+  </div>
+</div>
+  
+  <!-- Main Content Wrapper for Blur Effect -->
+  <div id="main-content" class="blur-bg">
+    <!-- Home Section -->
+    <section id="home" class="container mx-auto">
+      <div class="flex relative items-center pt-30 px-6">
+        <img src="../assets/couch.png" alt="Couch">
+        <img class="absolute left-[40%] top-35 w-1/5" src="../assets/app.svg" alt="App">
+      </div>
+    </section>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="container relative mx-auto pt-16">
+      <div class="flex gap-4 flex-col items-center justify-center pt-6 mt-8 sm:mt-20">
+        <button class="bg-cyan-700 px-4 py-2 rounded my-6">Download the App</button>
+        
+        <div class="flex flex-col md:flex-row gap-3 mt-10 pt-12">
+          <img class="hidden xl:block absolute top-[10%] left-1 overflow-hidden" src="../assets/dots.svg" alt="">
+          <img class="hidden xl:block absolute top-[10%] right-1 overflow-hidden" src="../assets/dots.svg" alt="">
+          
+          <div class="flex flex-col items-center">
+            <div class="flex items-center justify-center rounded-full w-20 h-20 border-cyan-700 border-4">
+              <i class="fas fa-check text-4xl text-cyan-600"></i>
+            </div>
+            <h4 class="py-4 text-2xl">Efficient</h4>
+            <p class="text-center">Feel good about your wallet and the environment</p>
+          </div>
+          
+          <div class="flex flex-col items-center my-8 md:my-0 md:mx-6">
+            <div class="flex items-center justify-center rounded-full w-20 h-20 border-cyan-700 border-4">
+              <i class="fas fa-check text-4xl text-cyan-600"></i>
+            </div>
+            <h4 class="py-4 text-2xl">Efficient</h4>
+            <p class="text-center">Feel good about your wallet and the environment</p>
+          </div>
+          
+          <div class="flex flex-col items-center">
+            <div class="flex items-center justify-center rounded-full w-20 h-20 border-cyan-700 border-4">
+              <i class="fas fa-check text-4xl text-cyan-600"></i>
+            </div>
+            <h4 class="py-4 text-2xl">Efficient</h4>
+            <p class="text-center">Feel good about your wallet and the environment</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Partners Section -->
+      <div class="flex flex-col container items-center justify-center md:mt-40 py-8 my-12 bg-cyan-100 gap-y-6">
+        <h2 class="text-cyan-700 text-3xl font-bold">Our Partners</h2>
+        <p class="text-center max-w-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Minus voluptatibus dicta quas sit consequuntur
+          atque rem, modi dolore excepturi blanditiis amet necessitatibus praesentium hic, vitae repellendus! Illo eligendi atque illum!
+        </p>
+        
+        <div class="flex items-center justify-between gap-6 sm:gap-10">
+          <img class="shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner1.svg" alt="Partner 1">
+          <img class="shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner2.svg" alt="Partner 2">
+          <img class="shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner3.svg" alt="Partner 3">
+          <img class="hidden md:block shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner4.svg" alt="Partner 4">
+        </div>
+        
+        <div class="flex items-center justify-between gap-6 sm:gap-10">
+          <img class="shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner5.svg" alt="Partner 5">
+          <img class="shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner6.svg" alt="Partner 6">
+          <img class="shadow-md hover:shadow-xl p-6 hover:bg-cyan-300" src="../assets/partner7.svg" alt="Partner 7">
+        </div>
+      </div>
+      
+      <!-- Relax Section -->
+      <div class="container mx-auto my-8 flex flex-col-reverse md:flex-row mt-4 px-6">
+        <div class="flex flex-1 gap-y-10 justify-between items-center">
+          <div class="flex flex-1 justify-center items-center flex-col">
+            <h2 class="text-cyan-700 text-3xl font-bold block mb-6 text-center">Relax, your Home!</h2>
+            <p class="text-center mb-10">All our supported hardware includes traditional inputs so you can integrate our products 
+            into your house in a way that's best for you</p>
+            <button class="px-6 rounded py-2 bg-cyan-700 block my-10 max-w-sm text-center">Sign Up</button>
+          </div>
+        </div>
+        <div class="flex-1 my-12 py-10 md:my-4">
+          <img src="../assets/table.png" alt="Table">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Cyan Bar Section -->
+    <section class="bg-cyan-700 h-40 w-full"></section>
+    
+    <!-- Connect Section -->
+    <section>
+      <div class="container flex justify-center px-16 gap-x-20 overflow-hidden items-center flex-col md:flex-row mx-auto">
+        <div class="max-h-180">
+          <img class="mb-4" src="../assets/lamp.png" alt="Lamp">
+          <button class="text-center bg-cyan-700 my-6 px-4 py-2 rounded">Download the App</button>
+          <img class="overflow-hidden hidden md:block mt-6" src="../assets/app.svg" alt="App">
+        </div>
+        
+        <form action="" class="mt-12 px-4 py-8 w-100 border-4 flex flex-col border-cyan-700 rounded">
+          <h2 class="font-bold mb-4 text-xl">Let's Connect</h2>
+          <span class="capitalize font-semibold mb-2">Your Name</span>
+          <input type="text" class="border-2 px-1 mb-2 py-2 border-cyan-700 rounded focus:border-4"> <br>
+          <span class="capitalize font-semibold mb-2">Your Email</span>
+          <input type="text" class="border-2 px-1 mb-2 py-2 border-cyan-700 rounded focus:border-4"> <br>
+          <span class="capitalize font-semibold mb-1">How can we help?</span>       
+          <textarea name="" id="" cols="2" rows="8" class="border-2 border-cyan-700 rounded focus:border-4 p-2"></textarea> <br>
+          <button class="px-6 max-w-30 rounded py-4 bg-cyan-700 block my-10 text-center">Sign Up</button>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="bg-cyan-700 mt-8 md:mt-0">
+      <div class="container mx-auto py-8 flex flex-col">
+        <div class="flex justify-center gap-8 my-4 py-4 items-center">
+          <a href="#"><i class="fab fa-instagram text-2xl text-white hover:-translate-y-[2px] hover:text-cyan-300 transition"></i></a>
+          <a href="#"><i class="fab fa-linkedin text-2xl text-white hover:-translate-y-0.5 hover:text-cyan-300 transition"></i></a>
+          <a href="#"><i class="fab fa-github text-2xl text-white hover:-translate-y-0.5 hover:text-cyan-300 transition"></i></a>
+          <a href="#"><i class="fab fa-facebook text-2xl text-white hover:-translate-y-0.5 hover:text-cyan-300 transition"></i></a>
+          <a href="mailto:your@email.com"><i class="fas fa-envelope text-2xl text-white hover:-translate-y-0.5 hover:text-cyan-300 transition"></i></a>
+          <a href="#"><i class="fab fa-x-twitter text-2xl text-white hover:-translate-y-0.5 hover:text-cyan-300 transition"></i></a>
+        </div>
+        <span class="text-center hover:underline text-white">&copy;2026 All rights Reserved</span>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

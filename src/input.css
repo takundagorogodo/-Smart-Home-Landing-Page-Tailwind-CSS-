@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind componets;
+@tailwind utilities;
+
+*{
+      box-sizing: border-box;
+}
+body{
+      width: 100%;
+}
+
+.blur-bg {
+      transition: filter 0.3s ease;
+}
+.blur-active {
+      filter: blur(4px);
+      pointer-events: none;
+}
+.menu-slide {
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%);
+}
+.menu-slide.open {
+      transform: translateX(0);
+}    
