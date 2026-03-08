@@ -147,10 +147,42 @@ git clone https://github.com/your-username/smart-home-landing-page.git
 3. Open `index.html` in your browser.
 
 ---
+## 📱 Screenshots Gallery
 
-## 🖼️ Screenshot
-
-Add a screenshot of your landing page here.
+<div align="center">
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto;">
+    
+### Desktop
+    <div>
+      <img src="screenshots/desktop-home.png" alt="Home Page" width="100%">
+      <p><strong>Home Page</strong></p>
+    </div>
+    <div>
+      <img src="screenshots/desktop-features.png" alt="Features" width="100%">
+      <p><strong>Features</strong></p>
+    </div>
+    <div>
+      <img src="screenshots/desktop-partners.png" alt="Partners" width="100%">
+      <p><strong>Partners</strong></p>
+    </div>
+    
+### Mobile
+    <div>
+      <img src="screenshots/mobile-closed.png" alt="Mobile Closed" width="100%">
+      <p><strong>Menu Closed</strong></p>
+    </div>
+    <div>
+      <img src="screenshots/mobile-open.png" alt="Mobile Open" width="100%">
+      <p><strong>Menu Open</strong></p>
+    </div>
+    <div>
+      <img src="screenshots/mobile-form.png" alt="Contact Form" width="100%">
+      <p><strong>Contact Form</strong></p>
+    </div>
+    
+  </div>
+</div>
+can i add this to my read me
 
 ```
 screenshot.png
