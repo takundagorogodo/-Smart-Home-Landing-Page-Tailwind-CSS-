@@ -192,9 +192,8 @@ Frontend Developer | Web Design Enthusiast
 
 ---
 ⭐ If you find this project helpful, please consider giving it a star!
----
+
 
 ## 📄 License
 
 This project is open-source and created for learning and educational purposes.
----
